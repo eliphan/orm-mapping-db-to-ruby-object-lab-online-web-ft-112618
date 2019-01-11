@@ -26,7 +26,6 @@ class Student
     WHERE name = ?
     LIMIT 1
     SQL
-    
     DB[:conn].execute(sql,name).map do |row|
   end
   
@@ -35,7 +34,6 @@ class Student
       INSERT INTO students (name, grade) 
       VALUES (?, ?)
     SQL
-
     DB[:conn].execute(sql, self.name, self.grade)
   end
   
