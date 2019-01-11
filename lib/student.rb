@@ -65,5 +65,11 @@ class Student
     DB[:conn].execute(sql)
   end
   
+  def self.all_students_below_12th_grade
+    sql = <<-SQL
+    SQL
+    DB[:conn].execute(sql)
+  end
+  
   
 end
